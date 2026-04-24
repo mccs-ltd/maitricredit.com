@@ -8,122 +8,80 @@
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      background: #f5f7fa;
-    }
-
-    header {
       display: flex;
-      justify-content: space-between;
-      padding: 15px 40px;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 60px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       background: linear-gradient(to right, #0d9488, #2563eb);
       color: white;
-    }
-
-    .section {
-      padding: 40px;
       text-align: center;
     }
 
-    .cards {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
+    .container {
+      max-width: 500px;
     }
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      width: 200px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
     }
 
-    .form-box {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-      margin: auto;
+    h2 {
+      font-weight: 300;
+      margin-bottom: 20px;
     }
 
-    input, textarea {
-      width: 100%;
+    p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .notify-box {
+      margin-top: 30px;
+    }
+
+    input {
       padding: 10px;
-      margin: 10px 0;
+      width: 70%;
+      border: none;
       border-radius: 5px;
-      border: 1px solid #ccc;
+      margin-right: 10px;
     }
 
     button {
-      background: #0d9488;
-      color: white;
+      padding: 10px 15px;
       border: none;
-      padding: 10px;
-      width: 100%;
       border-radius: 5px;
+      background: #fff;
+      color: #2563eb;
+      cursor: pointer;
+      font-weight: bold;
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-      color: white;
+      position: absolute;
+      bottom: 20px;
+      font-size: 14px;
+      opacity: 0.8;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h2>MCCS</h2>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+<div class="container">
+  <h1>Coming Soon</h1>
+  <h2>Maitri Credit Cooperative Society</h2>
+  <p>We are working hard to launch our website. Stay tuned for something amazing!</p>
 
-<section class="hero">
-  <h1>Welcome to Our Society</h1>
-  <p>Empowering members with financial growth and trust.</p>
-</section>
-
-<section class="section">
-  <h2>Our Services</h2>
-  <div class="cards">
-    <div class="card">Savings</div>
-    <div class="card">Loans</div>
-    <div class="card">Deposits</div>
+  <div class="notify-box">
+    <input type="email" placeholder="Enter your email">
+    <button>Notify Me</button>
   </div>
-</section>
-
-<section class="section">
-  <h2>Join Us</h2>
-  <div class="form-box">
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Phone">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Address"></textarea>
-    <button>Submit</button>
-  </div>
-</section>
+</div>
 
 <footer>
-  <p>© 2026 Maitri Credit Cooperative Society</p>
+  © 2026 Maitri Credit Cooperative Society
 </footer>
 
 </body>
